@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/*
+base style
+*/
+body {
+    color: #333;
+    background-color: #fafafa;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*
+header
+*/
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title {
+    margin: 0 0 0 100px;
+}
+.header-title > a {
+    text-decoration: none;
+}
+.header-title > a > img {
+    width: 300px;
+}
+.header-nav {
+    width: 40%;
+}
+.header-menu {
+    margin: 0 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-menu-item > a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Cormorant';
+    font-size: 1.25rem;
+    transition: all 0.25s;
+    margin: 0 40px;
+}
+.header-sns-item > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: all 0.25s;
+    margin: 0 20px;
+}
+.header-menu-item > a:hover, .header-sns-item > a:hover {
+    color: #ccc;
+}
+
+/*
+home-img
+*/
+#home-img {
+    width: 100vw;
+    height: 82.75vh;
+    overflow: hidden;
+    position: relative;
+}
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+.home-head, .home-text {
+    font-weight: lighter;
+    font-style: italic;
+}
+.home-head {
+    /* color: #333; */
+    color: #F86494;
+    font-family: 'Cormorant';
+    font-size: 8rem;
+    font-weight: normal;
+}
+.home-text {
+    color: #333;
+    font-family: 'Zen Kaku Gothic New';
+    font-size: 3rem;
+    margin: 0;
+}
+.home-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#home-img > video {
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    z-index: 1;
+}
+
+/*
+intro
+*/
+#introduce {
+    background-color: #eee;
+}
+.intro {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 0;
+}
+.intro.intro-second {
+    flex-direction: row-reverse;
+}
+.intro-img {
+    width: 30%;
+    text-align: center;
+}
+.intro-img > img {
+    width: 300px;
+    border-radius: 20%;
+    box-shadow: 5px 5px 20px -2px rgba(0,0,0,0.6);
+}
+.intro-text {
+    width: 70%;
+    font-size: 1.2rem;
+    font-family: 'Zen Kaku Gothic New';
+}
+.hnd-text {
+    font-family: 'Cormorant';
+    color: #F86494;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/*
+about
+*/
+#about {
+    background-color: #fdf4fc;
+}
+.about-area {
+    width: 80%;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+.about-area > h2 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Cormorant';
+    font-size: 3rem;
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.about-image {
+    width: 50%;
+    text-align: center;
+}
+.about-image > p {
+    font-family: 'Cormorant';
+    font-size: 2rem;
+}
+.about-image > img {
+    width: 500px;
+    border-radius: 50%;
+}
+.about-sns {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-sns-item {
+    list-style: none;
+    font-size: 2rem;
+    margin: 20px 20px 0 20px;
+}
+.about-sns-item > a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.25s;
+}
+.about-sns-item > a:hover {
+    color: #ccc;
+}
+.about-data > dt {
+    font-size: 1.5rem;
+    font-family: 'Zen Kaku Gothic New';
+    padding-top: 15px;
+}
+.about-data > dd {
+    font-family: 'Zen Kaku Gothic New';
+}
+
+/*
+footer
+*/
+footer {
+    text-align: center;
+    background-color: #fdf4fc;
+}
+footer > small {
+    font-family: 'Cormorant';
+    font-size: 1rem;
+}
