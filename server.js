@@ -10,4 +10,4 @@ const app = express();
 app.listen(PORT, () => {
   console.log('Server Start.');
 });
-app.use(express.static('static'));
+app.use(express.static('docs'));
